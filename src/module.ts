@@ -12,7 +12,7 @@ export default defineNuxtModule({
   setup(options, nuxt) {
     nuxt.options.alias = defu(
       nuxt.options.alias,
-      nxTsPaths(options.workspaceRoot)
+      nxTsPaths(options.workspaceRoot ?? "")
     );
   },
 });
